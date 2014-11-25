@@ -1,7 +1,7 @@
 Sequel & Postgres prepared statement issue
 ===================================
 
-Test to demonstrate sequel issue when working with prepared statements and binary data using postgres. On SQLite it works find. Other databases wasn't tested.
+Test to demonstrate sequel issue when working with prepared statements and binary data using postgres. On SQLite it works fine. Other databases wasn't tested.
 
 Tested using:
 
