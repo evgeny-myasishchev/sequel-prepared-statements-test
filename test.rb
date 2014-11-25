@@ -7,8 +7,10 @@ require 'sequel'
 Log = Logger.new STDOUT
 
 def assert_data(expected, actual)
-  if actual <=> actual
-    Log.error "Wrong data persisted.\nExpected bytes: #{expected}\n  Actual: #{actual}"
+  expected_string = expected.join(' ')
+  actual_string = actual.join(' ')
+  if expected_string != actual_string
+    Log.error "Wrong data persisted.\nExpected bytes: #{expected_string}\n  Actual bytes: #{actual_string}"
   else
     Log.info 'Data persisted correctly'
   end
